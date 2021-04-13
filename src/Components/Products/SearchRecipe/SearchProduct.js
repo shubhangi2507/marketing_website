@@ -33,7 +33,7 @@ class SearchProduct extends React.Component {
                                                 <img className="ui fluid image" alt={this.state.RecipeData.title} src={this.state.RecipeData.image} />
                                         </div>
                                         <div className="column">
-                                                <h1 className="grey">{this.state.RecipeData.title} </h1>
+                                                <h1 className="grey" id="propductRecipe">{this.state.RecipeData.title} </h1>
                                                 <h3>Instructions</h3>
                                                 <RecipeInstructions data={this.state.RecipeData.analyzedInstructions}/>
                                         </div>
