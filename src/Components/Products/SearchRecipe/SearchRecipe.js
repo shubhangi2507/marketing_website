@@ -31,8 +31,8 @@ class SearchRecipe extends React.Component {
                 return(
                         <React.Fragment>
                               <SearchBar label="Search Recipe" onFormSubmit={this.onFormSubmit}/>
-                              <div className="ui four column grid">
-                                        <CardView Data={this.state.images} path={path} />
+                              <div className="ui four column grid pad">
+                                        <CardView Data={this.state.images} path={path} type={'id'}/>
                                 </div>
                         </React.Fragment>
                 );

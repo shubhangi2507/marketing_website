@@ -7,6 +7,7 @@ const ContactCompoent = lazy(() => import('../Components/Contact/Contact'));
 const SearchRecipe = lazy(() => import('../Components/Products/SearchRecipe/SearchRecipe'));
 const SearchProduct = lazy(() => import('../Components/Products/SearchRecipe/SearchProduct'));
 const Restraunts = lazy(() => import('../Components/Products/SearchMenu/Restraunts'));
+const MenuItems = lazy(() => import('../Components/Products/SearchMenu/MenuItems'));
 
 export default (
         <Suspense fallback={<h1>Loading.....</h1>}>
@@ -15,6 +16,7 @@ export default (
                 <Route exact path="/SearchRecipe" component={SearchRecipe} />
                 <Route path="/SearchRecipe/:id" component={SearchProduct} />
                 <Route exact path="/Restraunts" component={Restraunts} />
+                <Route path="/Restraunts/:title" component={MenuItems} />
                 <Route exact path="/Contact" component={ContactCompoent} />
                 <Route exact path="/Login" component={LoginCompoent} />
                 <Route exact path="/SignUp" component={SignUpCompoent} />

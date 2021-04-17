@@ -7,7 +7,7 @@ const RecipeInstructions = (props) => {
         {
                 var RecipeSteps = props.data.[0].steps;
                 var stepInstruction = RecipeSteps.map(({number,step}) => {
-                        return (<div>
+                        return (<div key={step}>
                                 <span><b>{number}.</b></span>
                                 <span id="step">{step}</span>
                         </div>
