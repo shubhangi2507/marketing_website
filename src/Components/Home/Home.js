@@ -28,16 +28,7 @@ const Home = () => {
 						</div>
 					</div>
 				</div>	      
-				<div className="column">
-					<div className="ui fluid card">
-						<div className="image">
-							<img alt="elliot" src="/images/avatar/large/elliot.jpg"/>
-						</div>
-						<div className="content">
-							<a className="header">Elliot Fu</a>
-						</div>
-					</div>
-				</div>
+				
 			</div>	
 		
 		</div>		
