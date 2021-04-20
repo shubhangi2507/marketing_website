@@ -6,30 +6,23 @@ const ImageList = props => {
   const type = props.type;
   const images = props.Data.map(({ id, title, image}) => {
           let header;
-          let closer;
         if(type==='title')
-        {header = <NavLink className="header" to={`${path}/${title}`}>;
-          closer =</NavLink>;
-        }
+        {header = <NavLink className="header" to={`${path}/${title}`}>{title}</NavLink>;}
         else if(type==='id')
-        {header =<NavLink className="header" to={`${path}/${id}`}>;
-        closer =</NavLink>;}
+        {header =<NavLink className="header" to={`${path}/${id}`}>{title}</NavLink>;}
         else
-        { header =   <div className="header"> {title};
-        closer =</div>;}
+        { header =   <div className="header"> {title} </div>;}
     return (
             <React.Fragment key={id}>
         <div className="column"  >
-                {header}
                 <div className="ui fluid card">
                         <div className="image">
                                 <img alt={title} src={image}   key={id} />
                         </div>
                         <div className="content">
-                                {title}        
+                                {header}        
                         </div>
-                </div>   
-                {closer}     
+                </div>        
         </div>
         </React.Fragment>
     );
