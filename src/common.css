@@ -11,12 +11,10 @@
         font-size: 40px;
         color: cadetblue;
     }
-<<<<<<< HEAD
 
     .imgset{
         width:150px!important;height:100px!important;
 
-=======
     #foodacular{
         font-size: 7em;
         color: rgb(136, 131, 131);
@@ -46,5 +44,5 @@
 
     #jumbotron{
         margin-bottom: 10px;
->>>>>>> c90530346345bb76ac11c02b70a394550d0484e4
+
     }
