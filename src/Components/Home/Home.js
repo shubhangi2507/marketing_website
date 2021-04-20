@@ -22,7 +22,7 @@ const Home = () => {
 				<div className="column">
 					<div className="ui fluid card">
 						<div className="image">
-							<img  className = "imgset" alt="rcpie" src={rcpie}/>
+							<img  alt="rcpie" src={rcpie}/>
 						</div>
 						<div className="content">
 							<NavLink className="header" to="/SearchRecipe">Search Recipe</NavLink>
@@ -33,7 +33,7 @@ const Home = () => {
 			<div className="column">
 				<div className="ui fluid card">
 					<div className="image">
-						<img className = "imgset" alt="helen" src={srch_r}/>
+						<img alt="helen" src={srch_r}/>
 					</div>
 					<div className="content">
 						<NavLink className="header" to="/Restraunts">Search Menu</NavLink>
