@@ -11,7 +11,7 @@ const Home = () => {
         
 		<div className="container" >  
 			<div id="jumbotron">
-			<div id="middle">
+			<div className="middle">
 				<h1 id="foodacular">FOODACULAR</h1>
 			</div>
 			<div id="subtext">A fun website to play around with food. You can browse and find recipe's for your favourite food!</div>
