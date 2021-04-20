@@ -4,12 +4,20 @@ import { NavLink } from 'react-router-dom';
 import rcpie from '../../assets/rcpie.jpg';
 import srch_r from '../../assets/srch_r.jpeg';
 
+
 const Home = () => {
     return (
         <React.Fragment>
         
-		<div className="container">  
-                	<h1>Welcome! Please search the Recipe or select the Search Menu</h1>
+		<div className="container" >  
+			<div id="jumbotron">
+			<div id="title">
+				<h1 id="foodacular">FOODACULAR</h1>
+			</div>
+			<div id="subtext">A fun website to play around with food. You can browse and find recipe's for your favourite food!</div>
+				
+			</div>
+			
 			<div className="ui three column grid">
 				<div className="column">
 					<div className="ui fluid card">
