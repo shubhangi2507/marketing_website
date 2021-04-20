@@ -12,7 +12,7 @@ const Home = () => {
 				<div className="column">
 					<div className="ui fluid card">
 						<div className="image">
-							<img alt="daniel" src="/images/avatar/large/daniel.jpg"/>
+							<img alt="daniel" src="/images/rcpie.jpeg"/>
 						</div>
 						<div className="content">
 							<NavLink className="header" to="/SearchRecipe">Search Recipe</NavLink>
