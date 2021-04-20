@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import rcpie from '../../assets/rcpie.jpeg';
-import helen from '../../assets/helen.jpeg';
+import rcpie from '../../assets/rcpie.jpg';
+import srch_r from '../../assets/srch_r.jpeg';
 
 const Home = () => {
     return (
