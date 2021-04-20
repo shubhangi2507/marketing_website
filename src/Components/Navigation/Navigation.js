@@ -6,7 +6,7 @@ const Navigation = () =>{
 return (
         <React.Fragment>
         <div className="ui secondary pointing menu">
-                <NavLink className="active item" exact  to="/">Home</NavLink>
+                <NavLink className="item" exact  to="/">Home</NavLink>
                 <NavLink className="item" exact  to="/SearchRecipe">Search Recipe</NavLink>
                 <NavLink className="item" exact  to="/Restraunts">Search Menu Item</NavLink>
                 <NavLink className="item" to="/Contact">Contact us</NavLink>
