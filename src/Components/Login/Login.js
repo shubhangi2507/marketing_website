@@ -12,7 +12,7 @@ class Register extends Component {
     }
   }
   handleClick(event){
-    var apiBaseUrl = "http://localhost/login_check.php?";
+    var apiBaseUrl = "http://localhost:8080/login_check.php?";
     console.log("values=",this.state.first_name,this.state.last_name,this.state.email,this.state.password);
     //To be done:check for empty values before hitting submit
     var self = this;
@@ -25,12 +25,13 @@ class Register extends Component {
    .then(function (response) {
      console.log(response);
      if(response.status == 200){
-       if(response.data=="new user inserted"){
-         var welcome_message = 'Welcome '+name
-         alert(welcome_message)
-       } else {
-         alert(response.data);
-       };
+      //  if(response.data=="Hi there welcome to the login"){
+      //    var welcome_message = 'Hi '+name + ', You are logged in'
+      //    alert(welcome_message)
+      //  } else {
+      //    alert(response.data);
+      //  };
+      alert(response.data);
      }
    })
    .catch(function (error) {
