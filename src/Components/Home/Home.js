@@ -1,20 +1,18 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import recipe from '../../../assets/rcpie.jpeg';
-
 
 const Home = () => {
     return (
         <React.Fragment>
-        <div style ={ background-image: 'url(' + Image + ')', background-size: 'auto' }>
-		<div className="container" >
-                	<h1>Hello</h1>
+        
+		<div className="container">
+                	<h1>Welcome</h1>
 			<div className="ui three column grid">
 				<div className="column">
 					<div className="ui fluid card">
 						<div className="image">
-							<img alt="daniel" src="./images/avatar/large/rcpie.jpeg"/>
+							<img alt="daniel" src="../../../assets/rcpie.jpeg"/>
 						</div>
 						<div className="content">
 							<NavLink className="header" to="/SearchRecipe">Search Recipe</NavLink>
@@ -34,8 +32,7 @@ const Home = () => {
 				
 			</div>	
 		
-		</div>	
-		</div>	
+		</div>		
         </React.Fragment>
 	);
 };
