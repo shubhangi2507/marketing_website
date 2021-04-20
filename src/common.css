@@ -1,0 +1,13 @@
+.pad{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .restTitle{
+        display:flex;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        color: cadetblue;
+    }
