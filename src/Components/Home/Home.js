@@ -19,25 +19,29 @@ const Home = () => {
 			</div>
 			<div className="ui two column grid pad" >
 				<div className="column">
-					<div className="ui fluid card">
-						<div className="image">
-							<img  alt="rcpie" src={rcpie}/>
+					<NavLink className="header" to="/SearchRecipe">
+						<div className="ui fluid card">
+							<div className="image">
+								<img  alt="rcpie" src={rcpie}/>
+							</div>
+							<div className="content">
+								Search Recipe
+							</div>
 						</div>
-						<div className="content">
-							<NavLink className="header" to="/SearchRecipe">Search Recipe</NavLink>
-						</div>
-					</div>
+					</NavLink>
 				</div>
 			
 				<div className="column">
-					<div className="ui fluid card">
-						<div className="image">
-							<img alt="helen" src={srch_r}/>
+					<NavLink className="header" to="/Restraunts">
+						<div className="ui fluid card">
+							<div className="image">
+								<img alt="helen" src={srch_r}/>
+							</div>
+							<div className="content">
+								Search Menu
+							</div>
 						</div>
-						<div className="content">
-							<NavLink className="header" to="/Restraunts">Search Menu</NavLink>
-						</div>
-					</div>
+					</NavLink>
 				</div>
 			</div>
 			
