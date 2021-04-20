@@ -11,14 +11,13 @@ const Home = () => {
         
 		<div className="container" >  
 			<div id="jumbotron">
-			<div id="title">
+			<div id="middle">
 				<h1 id="foodacular">FOODACULAR</h1>
 			</div>
 			<div id="subtext">A fun website to play around with food. You can browse and find recipe's for your favourite food!</div>
 				
 			</div>
-			
-			<div className="ui three column grid">
+			<div className="ui two column grid pad" >
 				<div className="column">
 					<div className="ui fluid card">
 						<div className="image">
@@ -41,6 +40,8 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
+			
+			
 			
 		</div>	
 	
