@@ -3,12 +3,19 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import dunkin from '../../assets/dunkin_donut.png';
 
+
 const Home = () => {
     return (
         <React.Fragment>
         
-		<div className="container" style={{backgroundImage:}}>  
-                	<h1>Welcome! Please search the Recipe or select the Search Menu</h1>
+		<div className="container" >  
+	
+			<div id="title">
+				<h1 id="foodacular">FOODACULAR</h1>
+			</div>
+				
+				
+			
 			<div className="ui three column grid">
 				<div className="column">
 					<div className="ui fluid card">
