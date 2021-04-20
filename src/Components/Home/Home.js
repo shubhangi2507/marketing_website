@@ -1,19 +1,20 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import dunkin from '../../assets/dunkin_donut.png';
+import rcpie from '../../assets/rcpie.jpeg';
+import helen from '../../assets/helen.jpeg';
 
 const Home = () => {
     return (
         <React.Fragment>
         
-		<div className="container" style={{backgroundImage:}}>  
+		<div className="container">  
                 	<h1>Welcome! Please search the Recipe or select the Search Menu</h1>
 			<div className="ui three column grid">
 				<div className="column">
 					<div className="ui fluid card">
 						<div className="image">
-							<img alt="daniel" src={dunkin}/>
+							<img alt="rcpie" src={rcpie}/>
 						</div>
 						<div className="content">
 							<NavLink className="header" to="/SearchRecipe">Search Recipe</NavLink>
