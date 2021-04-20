@@ -12,6 +12,7 @@ if ( $_REQUEST['email'] != "" && $_REQUEST["password"]) {
         // echo "json email:".$json["email"]." request email:".$_REQUEST['email']."\n";
         if ($item["email"] == $_REQUEST['email'] && $item["password"] == $_REQUEST['password']) {
             echo "Hi ".$item["firstname"]. " welcome to the login";
+            return;
             $insert_new_user = false;
         } else {
             $user_found = false;
