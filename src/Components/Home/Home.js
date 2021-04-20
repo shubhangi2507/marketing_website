@@ -29,17 +29,18 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-			</div>
-			<div className="column">
-				<div className="ui fluid card">
-					<div className="image">
-						<img className = "imgset" alt="helen" src={srch_r}/>
-					</div>
-					<div className="content">
-						<NavLink className="header" to="/Restraunts">Search Menu</NavLink>
+			
+				<div className="column">
+					<div className="ui fluid card">
+						<div className="image">
+							<img className = "imgset" alt="helen" src={srch_r}/>
+						</div>
+						<div className="content">
+							<NavLink className="header" to="/Restraunts">Search Menu</NavLink>
+						</div>
 					</div>
 				</div>
-			</div>	      
+			</div>
 			
 		</div>	
 	
