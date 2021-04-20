@@ -1,7 +1,8 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import dunkin from '../../assets/dunkin_donut.png';
+import rcpie from '../../assets/rcpie.jpg';
+import srch_r from '../../assets/srch_r.jpeg';
 
 
 const Home = () => {
@@ -20,7 +21,7 @@ const Home = () => {
 				<div className="column">
 					<div className="ui fluid card">
 						<div className="image">
-							<img alt="daniel" src={dunkin}/>
+							<img alt="rcpie" src={rcpie}/>
 						</div>
 						<div className="content">
 							<NavLink className="header" to="/SearchRecipe">Search Recipe</NavLink>
