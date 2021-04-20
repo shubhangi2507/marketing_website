@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 const Home = () => {
     return (
         <React.Fragment>
+        
 		<div className="container">
                 	<h1>Hello</h1>
 			<div className="ui three column grid">
