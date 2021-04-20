@@ -40,6 +40,7 @@ class Register extends Component {
    })
    .catch(function (error) {
      console.log(error);
+     alert(error)
    });
   }
   render() {
