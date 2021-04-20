@@ -14,7 +14,7 @@ const Home = () => {
 				<div className="column">
 					<div className="ui fluid card">
 						<div className="image">
-							<img alt="rcpie" src={rcpie}/>
+							<img  className = "imgset" alt="rcpie" src={rcpie}/>
 						</div>
 						<div className="content">
 							<NavLink className="header" to="/SearchRecipe">Search Recipe</NavLink>
@@ -25,7 +25,7 @@ const Home = () => {
 			<div className="column">
 				<div className="ui fluid card">
 					<div className="image">
-						<img alt="helen" src="/images/avatar/large/helen.jpg"/>
+						<img className = "imgset" alt="helen" src={srch_r}/>
 					</div>
 					<div className="content">
 						<NavLink className="header" to="/Restraunts">Search Menu</NavLink>
