@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import rcpie from '../../assets/rcpie.jpg';
+import rcpie from '../../assets/recipe.png';
 import srch_r from '../../assets/srch_r.jpeg';
 
 
@@ -22,7 +22,7 @@ const Home = () => {
 					<NavLink className="header" to="/SearchRecipe">
 						<div className="ui fluid card">
 							<div className="image">
-								<img  alt="rcpie" src={rcpie}/>
+								<img  alt="rcpie" src={srch_r}/>
 							</div>
 							<div className="content">
 								Search Recipe
@@ -35,7 +35,7 @@ const Home = () => {
 					<NavLink className="header" to="/Restraunts">
 						<div className="ui fluid card">
 							<div className="image">
-								<img alt="helen" src={srch_r}/>
+								<img alt="helen" src={rcpie}/>
 							</div>
 							<div className="content">
 								Search Menu
