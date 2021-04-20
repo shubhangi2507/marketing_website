@@ -53,3 +53,12 @@
     .w100{
         width: 100%;
     }
+#developers{
+    width:250px;
+}
+.flexMiddle{
+    justify-content: center;
+}
+.cursive{
+    font-family: cursive;
+}

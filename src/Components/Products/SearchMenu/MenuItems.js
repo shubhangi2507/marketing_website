@@ -28,7 +28,7 @@ class SearchProduct extends React.Component {
                 return(
                         <React.Fragment>
                                 <div className="container">
-                                <h1 class="restTitle">Menu Item for {this.props.match.params.title} </h1>
+                                <h1 className="restTitle">Menu Item for {this.props.match.params.title} </h1>
                                 <div className="ui five column grid pad">
                                  <CardView Data={this.state.menuItems} /></div>
                                  </div>

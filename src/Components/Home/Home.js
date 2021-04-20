@@ -44,8 +44,69 @@ const Home = () => {
 					</NavLink>
 				</div>
 			</div>
-			
-			
+			<h1 className="center cursive">DEVELOPED BY__</h1>
+			<div className="ui link cards flexMiddle">
+				<div className="card"  id="developers">
+				
+				<div className="content">
+				<div className="header">Daksh Pratap Singh</div>
+				<div className="meta">
+					<a>Developer</a>
+				</div>
+				<div className="description">
+					Daksh developed landing page.
+				</div>
+				</div>
+				</div>
+				<div className="card"  id="developers">
+				<div className="content">
+				<div className="header">Shubhangi Rastogi</div>
+				<div className="meta">
+					<span className="date">Developer</span>
+				</div>
+				<div className="description">
+					Shubhangi developed product related pages.
+				</div>
+				</div>
+				</div>
+				<div className="card"  id="developers">
+				
+				<div className="content">
+				<div className="header">Rakesh Ranjan Sigh</div>
+				<div className="meta">
+					<a>Developer</a>
+				</div>
+				<div className="description">
+					Rakesh developed contact page.
+				</div>
+				</div>
+				
+				</div>
+				<div className="card"  id="developers">
+				
+				<div className="content">
+				<div className="header">Vishal Punj</div>
+				<div className="meta">
+					<span className="date">Developer</span>
+				</div>
+				<div className="description">
+					Vishal developed sign up page.
+				</div>
+				</div>
+				</div>
+				<div className="card"  id="developers">
+				
+				<div className="content">
+				<div className="header">Shreya Srivastava</div>
+				<div className="meta">
+					<span className="date">Developer</span>
+				</div>
+				<div className="description">
+					Shreya developed login page.
+				</div>
+				</div>
+				</div>
+			</div>
 			
 		</div>	
 	
