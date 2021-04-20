@@ -20,20 +20,21 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-				<div className="column">
-					<div className="ui fluid card">
-						<div className="image">
-							<img alt="helen" src="/images/avatar/large/helen.jpg"/>
-						</div>
-						<div className="content">
-							<NavLink className="header" to="/Restraunts">Search Menu</NavLink>
-						</div>
+			</div>
+			<div className="column">
+				<div className="ui fluid card">
+					<div className="image">
+						<img alt="helen" src="/images/avatar/large/helen.jpg"/>
 					</div>
-				</div>	      
-				
-			</div>	
+					<div className="content">
+						<NavLink className="header" to="/Restraunts">Search Menu</NavLink>
+					</div>
+				</div>
+			</div>	      
+			
+		</div>	
+	
 		
-		</div>		
         </React.Fragment>
 	);
 };
