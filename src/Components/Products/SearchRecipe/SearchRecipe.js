@@ -29,12 +29,12 @@ class SearchRecipe extends React.Component {
                 
                 const { path } = this.props.match;
                 return(
-                        <React.Fragment>
+                        <div className="pad">
                               <SearchBar label="Search Recipe" onFormSubmit={this.onFormSubmit}/>
                               <div className="ui four column grid pad">
                                         <CardView Data={this.state.images} path={path} type={'id'}/>
                                 </div>
-                        </React.Fragment>
+                        </div>
                 );
         }
 }

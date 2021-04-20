@@ -6,7 +6,7 @@ import Navigation from  './Navigation/Navigation.js';
 
 const RootComponent = () => {
     return (
-        <div className="container">
+        <div>
             <BrowserRouter>
                     <Navigation/>
             </BrowserRouter>

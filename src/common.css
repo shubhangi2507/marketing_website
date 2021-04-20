@@ -1,8 +1,8 @@
 .pad{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-top: 1rem!important;
+        margin-bottom: 1rem!important;
+        margin-left: 1rem!important;
+        margin-right: 1rem!important;
     }
     .restTitle{
         display:flex;
