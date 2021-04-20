@@ -1,73 +1,67 @@
-import React, { useState } from "react";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import "./Login.css";
-import { logindetls } from './pass_username'
-import Calling_login from './call_login'
-
-export default function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
-  const [loginstate, setLogin] = useState(false);
-
-  function validateForm() {
-    return email.length > 0 && password.length > 0;
-  }
-
-  function handleSubmit(event) {
-    for (let i = 0; i < logindetls.length; i++)
-    {
-      if(email === logindetls[i].username &&  password === logindetls[i].password)
-      {
-        setLogin(true);
-        setName(logindetls[i].name);
-        event.preventDefault();
-
-        return;
-      }
-
+import React, { Component } from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import RaisedButton from 'material-ui/RaisedButton';
+import TextField from 'material-ui/TextField';
+import axios from 'axios';
+class Register extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      email:'',
+      password:''
     }
-    setLogin(false);
-    event.preventDefault();
   }
-
-  return (
-    !loginstate?
-    (
-      <div className="Login">
-      <Form onSubmit={handleSubmit}>
-        <Form.Group size="lg" controlId="email">
-          <Form.Label>Email</Form.Label>
-          <Form.Control
-            autoFocus
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </Form.Group>
-        <Form.Group size="lg" controlId="password">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </Form.Group>
-        <Button block size="lg" type="submit" disabled={!validateForm()}>
-          Login
-        </Button>
-      </Form>
-    </div>
-
-    )
-    
-    :
-    (
-    // <div>
-    //   <h2>"Hello there!!!, You are logged in"</h2>
-    // </div>
-    <Calling_login name={name}/>
-    )
-  );
+  handleClick(event){
+    var apiBaseUrl = "http://localhost/login_check.php";
+    console.log("values",this.state.first_name,this.state.last_name,this.state.email,this.state.password);
+    //To be done:check for empty values before hitting submit
+    var self = this;
+    var payload={
+    "email":this.state.email,
+    "password":this.state.password
+    }
+    var name=this.state.first_name;
+    axios.get(apiBaseUrl+"&email="+this.state.email+"&password="+this.state.password)
+   .then(function (response) {
+     console.log(response);
+     if(response.status == 200){
+       if(response.data=="new user inserted"){
+         var welcome_message = 'Welcome '+name
+         alert(welcome_message)
+       } else if(response.data=="user already exists"){
+         alert(response.data);
+       };
+     }
+   })
+   .catch(function (error) {
+     console.log(error);
+   });
+  }
+  render() {
+    return (
+      <div>
+        <MuiThemeProvider>
+          <div style={{textAlign:'center',border:'1px solid #dedbd1',marginLeft: '30%',marginRight: '30%',padding: '10px',borderRadius: '25px'}}>
+           <TextField
+             hintText="Enter your Email"
+             type="email"
+             floatingLabelText="Email"
+             onChange = {(event,newValue) => this.setState({email:newValue})}
+             />
+           <br/>
+           <TextField
+             type = "password"
+             hintText="Enter your Password"
+             floatingLabelText="Password"
+             onChange = {(event,newValue) => this.setState({password:newValue})}
+             />
+           <br/>
+           <RaisedButton label="Submit" primary={true} style={{backgroundColor:'black'}} onClick={(event) => this.handleClick(event)}/>
+          </div>
+         </MuiThemeProvider>
+      </div>
+    );
+  }
 }
+
+export default Register;
