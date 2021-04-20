@@ -12,8 +12,8 @@ class Register extends Component {
     }
   }
   handleClick(event){
-    var apiBaseUrl = "http://localhost/login_check.php";
-    console.log("values",this.state.first_name,this.state.last_name,this.state.email,this.state.password);
+    var apiBaseUrl = "http://localhost/login_check.php?";
+    console.log("values=",this.state.first_name,this.state.last_name,this.state.email,this.state.password);
     //To be done:check for empty values before hitting submit
     var self = this;
     var payload={
@@ -28,7 +28,7 @@ class Register extends Component {
        if(response.data=="new user inserted"){
          var welcome_message = 'Welcome '+name
          alert(welcome_message)
-       } else if(response.data=="user already exists"){
+       } else {
          alert(response.data);
        };
      }
