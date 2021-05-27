@@ -27,7 +27,7 @@ class SearchProduct extends React.Component {
         render(){
                 return(
                         <React.Fragment>
-                        <div className="ui segment">
+                        <div className="ui segment pad">
                                 <div className="ui two column very relaxed grid">
                                         <div className="column">
                                                 <img className="ui fluid image" alt={this.state.RecipeData.title} src={this.state.RecipeData.image} />

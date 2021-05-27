@@ -79,12 +79,12 @@ class SearchRecipe extends React.Component {
         render(){
                 const { path } = this.props.match;
                 return(
-                        <React.Fragment>
-                                <h1 class="restTitle">Search Menu Items of the given Restraunts</h1>
+                        <div className="pad">
+                                <h1 className="restTitle">Search Menu Items of the given Restraunts</h1>
                               <div className="ui five column grid pad">
                                         <CardView Data={this.state.productsData} path={path} type={'title'}/>
                                 </div>
-                        </React.Fragment>
+                        </div>
                 );
         }
 }

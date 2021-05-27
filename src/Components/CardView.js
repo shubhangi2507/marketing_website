@@ -21,7 +21,6 @@ const ImageList = props => {
                         </div>
                         <div className="content">
                                 {header}        
-                      
                         </div>
                 </div>        
         </div>

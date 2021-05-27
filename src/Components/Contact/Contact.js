@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* eslint-disable */
 /*
 import React from 'react';
@@ -12,6 +13,9 @@ const Contact = () => {
 };
 */
 
+=======
+import React, { Component } from 'react';
+>>>>>>> 7709ea44060728bed948f378a6c5f8f0362f3683
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 
@@ -70,8 +74,7 @@ class Contact extends Component {
 
     render() {
         return (
-            <div className="container p-3 my-3 border">
-             
+            <div className=" p-3 my-3 border pad">
           <h1 className="text-info">Contact US</h1> <h3>{this.state.successMessage}</h3>
           <form id="contact-form"  onSubmit={this.submitData}>
 

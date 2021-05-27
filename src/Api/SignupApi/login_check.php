@@ -1,17 +1,25 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-
+// echo "hi".$_REQUEST['email']." ".$_REQUEST["password"];
 if ( $_REQUEST['email'] != "" && $_REQUEST["password"]) {
-    $str = file_get_contents('http://localhost/users.json');
+    $str = file_get_contents('http://localhost:8080/users.json');
     $json = json_decode($str, true);
     // print_r($json);
-    $insert_new_user = true;
+    $user_found = true;
+    // echo "json email:".$json["email"]." request email:".$_REQUEST['email']."\n";
+
     foreach ($json as $item) {
         // echo "json email:".$json["email"]." request email:".$_REQUEST['email']."\n";
         if ($item["email"] == $_REQUEST['email'] && $item["password"] == $_REQUEST['password']) {
-            echo "Hi there welcome to the login";
+            echo "Hi ".$item["firstname"]. " welcome to the login";
+            return;
             $insert_new_user = false;
-        } 
+        } else {
+            $user_found = false;
+        }
+    }
+    if($user_found == false) {
+        echo "Ohh, this user does not exist";
     }
     // if ($insert_new_user) {
     //     $data = [

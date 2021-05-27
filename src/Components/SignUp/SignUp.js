@@ -35,6 +35,8 @@ class Register extends Component {
          alert(welcome_message)
        } else if(response.data=="user already exists"){
          alert(response.data);
+       } else {
+        alert(response.data);
        };
      }
    })

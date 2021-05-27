@@ -1,8 +1,8 @@
 .pad{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-top: 1rem!important;
+        margin-bottom: 1rem!important;
+        margin-left: 1rem!important;
+        margin-right: 1rem!important;
     }
     .restTitle{
         display:flex;
@@ -11,3 +11,54 @@
         font-size: 40px;
         color: cadetblue;
     }
+
+    .imgset{
+        width:150px!important;height:100px!important;
+    }
+    #foodacular{
+        font-size: 7em;
+        color: rgb(136, 131, 131);
+        line-height: 1.2;
+        margin: 0px 0px 0px;
+        padding-bottom: 0px;
+        -moz-perspective: 500px;
+        -webkit-perspective: 500px;
+        perspective: 500px;
+        text-shadow: 0px 0px 3px rgb(32, 32, 32);;
+        -moz-transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        font-family: cursive;
+        font-weight: normal;
+    }
+    .middle{
+        display: flex;
+        justify-content: center;
+    }
+
+    #subtext{
+        font-family: cursive;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #jumbotron{
+        margin-bottom: 10px;
+
+    }
+
+    .center{
+        text-align: center;
+    }
+    .w100{
+        width: 100%;
+    }
+#developers{
+    width:250px;
+}
+.flexMiddle{
+    justify-content: center;
+}
+.cursive{
+    font-family: cursive;
+}
